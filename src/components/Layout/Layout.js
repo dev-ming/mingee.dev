@@ -6,6 +6,7 @@ function Layout(props) {
   return (
     <div>
       <Header />
+      <div style={{ position: "fixed", top: "70px" }}>{props.children}</div>
       <Footer />
     </div>
   );
