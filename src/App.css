@@ -1,3 +1,7 @@
+body {
+  background-color: #282f46;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: "GlossAndBloom";
+  src: url("./assets/fonts/Gloss_And_Bloom.ttf");
 }
