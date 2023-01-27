@@ -45,3 +45,8 @@ body {
   font-family: "GlossAndBloom";
   src: url("./assets/fonts/Gloss_And_Bloom.ttf");
 }
+
+@font-face {
+  font-family: "SoakUpTheSun";
+  src: url("./assets/fonts/Soak_Up_The_Sun_Script-Bold.otf");
+}
