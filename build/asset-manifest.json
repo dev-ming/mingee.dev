@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.dd5e3b47.js",
-    "static/js/787.2484b70b.chunk.js": "/static/js/787.2484b70b.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/static/css/main.fb1808b3.css",
+    "main.js": "/static/js/main.a17c05ed.js",
+    "static/media/Gloss_And_Bloom.ttf": "/static/media/Gloss_And_Bloom.e3ac1c7f1971517fa3e0.ttf",
+    "static/media/Soak_Up_The_Sun_Script-Bold.otf": "/static/media/Soak_Up_The_Sun_Script-Bold.501db30f95ed1490c9ff.otf",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.dd5e3b47.js.map": "/static/js/main.dd5e3b47.js.map",
-    "787.2484b70b.chunk.js.map": "/static/js/787.2484b70b.chunk.js.map"
+    "main.fb1808b3.css.map": "/static/css/main.fb1808b3.css.map",
+    "main.a17c05ed.js.map": "/static/js/main.a17c05ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.dd5e3b47.js"
+    "static/css/main.fb1808b3.css",
+    "static/js/main.a17c05ed.js"
   ]
 }
