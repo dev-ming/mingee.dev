@@ -1,0 +1,22 @@
+.main-page {
+  width: 100%;
+  height: auto;
+}
+
+.main-page .main-text-container {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 10%;
+  display: flex;
+  justify-content: left;
+}
+
+.main-text {
+  font-family: "SoakUpTheSun";
+  font-size: 20rem;
+  color: #ff00ce;
+  line-height: 15rem;
+  padding: 10rem;
+  padding-top: 30rem;
+}
