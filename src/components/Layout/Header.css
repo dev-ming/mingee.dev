@@ -40,7 +40,14 @@ li {
   -ms-user-select: none;
   user-select: none;
 }
-.ham:active {
+.ham-active {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   transform: rotate(45deg);
 }
 .hamRotate180.active {
@@ -49,7 +56,7 @@ li {
 .line {
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: #000;
+  stroke: white;
   stroke-width: 5.5;
   stroke-linecap: round;
 }
@@ -59,21 +66,11 @@ li {
 .ham .bottom {
   stroke-dasharray: 40 180;
 }
-.ham:active .top {
+.ham-active .top {
+  stroke-dasharray: 40 139;
   stroke-dashoffset: -98px;
 }
-.ham:active .bottom {
+.ham-active .bottom {
+  stroke-dasharray: 40 180;
   stroke-dashoffset: -138px;
-}
-
-@keyframes ani {
-  0% {
-    stroke-dashoffset: 400;
-  }
-  50% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: 400;
-  }
 }

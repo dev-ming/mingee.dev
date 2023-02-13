@@ -11,7 +11,6 @@ function Header(props) {
   const menuToggle = () => {
     if (isActive) setIsActive(false);
     else setIsActive(true);
-    console.log(isActive);
   };
 
   // 반응형 웹
@@ -79,6 +78,7 @@ function Header(props) {
             <img
               style={{
                 height: "80%",
+                width: "auto",
                 padding: "20px",
                 boxSizing: "border-box",
               }}
@@ -90,7 +90,7 @@ function Header(props) {
             />
             <div style={{ width: "10%" }}>
               <svg
-                className="ham"
+                className={isActive ? "ham-active" : "ham"}
                 viewBox="0 0 100 100"
                 width="80"
                 onClick={menuToggle}
