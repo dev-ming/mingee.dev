@@ -5,13 +5,13 @@ import Homepage from "../src/pages/Homepage.js";
 
 function App(props) {
   return (
-    <Layout>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Layout>
         <Routes>
           <Route exact path="/" element={<Homepage />} />
         </Routes>
-      </BrowserRouter>
-    </Layout>
+      </Layout>
+    </BrowserRouter>
   );
 }
 

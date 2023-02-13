@@ -4,19 +4,64 @@
 }
 
 .main-page .main-text-container {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 50%;
   position: fixed;
   bottom: 10%;
   display: flex;
   justify-content: left;
 }
 
-.main-text {
-  font-family: "SoakUpTheSun";
-  font-size: 20rem;
-  color: #ff00ce;
-  line-height: 15rem;
-  padding: 10rem;
-  padding-top: 30rem;
+.main-page .main-text-container-mobile {
+  width: 100%;
+  height: 40%;
+  position: fixed;
+  bottom: 35%;
+  display: flex;
+  justify-content: left;
+}
+
+.main-page .particle-heart {
+  cursor: pointer;
+}
+
+.heart {
+  position: absolute;
+  opacity: 0;
+  background-color: #d90456;
+  box-shadow: 0px 0px 50px 4px transparentize(#ef2345, 0.3);
+  animation: animated-heart infinite ease-in;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d90456;
+}
+.heart:before {
+  transform: translateX(-50%);
+}
+.heart:after {
+  transform: translateY(-50%);
+}
+
+@keyframes animated-heart {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, -40%) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -1000%) rotate(45deg);
+  }
 }
