@@ -24,6 +24,10 @@ function Header(props) {
     query: "(max-width:767px)",
   });
 
+  /** project 페이지 생성 전 까지 원래 포트폴리오 사이트로 이동 */
+  const urlPortfolio = "https://jennadev.myportfolio.com/";
+  const urlBlog = "https://dev-jenna.tistory.com/";
+
   return (
     <>
       {isPc && (
@@ -54,10 +58,19 @@ function Header(props) {
                 <li
                   style={{ color: "#FFFF00" }}
                   onClick={() => {
-                    navigate("/project");
+                    // navigate("/project");
+                    window.open(urlPortfolio);
                   }}
                 >
                   Project
+                </li>
+                <li
+                  style={{ color: "#ffae00" }}
+                  onClick={() => {
+                    window.open(urlBlog);
+                  }}
+                >
+                  Blog
                 </li>
                 <li
                   style={{ color: "#00CEFF" }}
@@ -74,7 +87,7 @@ function Header(props) {
       )}
       {isMobile && (
         <div className="Header">
-          <div className="nav-container">
+          <div className="nav-container-mobile">
             <img
               style={{
                 height: "80%",
@@ -86,9 +99,10 @@ function Header(props) {
               alt="logo"
               onClick={() => {
                 navigate("/");
+                setIsActive(false);
               }}
             />
-            <div style={{ width: "10%" }}>
+            <div style={{ float: "right" }}>
               <svg
                 className={isActive ? "ham-active" : "ham"}
                 viewBox="0 0 100 100"
@@ -106,36 +120,46 @@ function Header(props) {
                 />
               </svg>
             </div>
-
-            <nav>
-              <ul className="navigation-menu">
-                <li
-                  style={{ color: "#00FF58" }}
-                  onClick={() => {
-                    navigate("/about");
-                  }}
-                >
-                  About
-                </li>
-                <li
-                  style={{ color: "#FFFF00" }}
-                  onClick={() => {
-                    navigate("/project");
-                  }}
-                >
-                  Project
-                </li>
-                <li
-                  style={{ color: "#00CEFF" }}
-                  onClick={() => {
-                    navigate("/contact");
-                  }}
-                >
-                  Contact
-                </li>
-              </ul>
-            </nav>
           </div>
+          <ul className={isActive ? "mobile-menu-active" : "mobile-menu"}>
+            <li
+              style={{ color: "#00FF58" }}
+              onClick={() => {
+                navigate("/about");
+                menuToggle();
+              }}
+            >
+              About
+            </li>
+            <li
+              style={{ color: "#FFFF00" }}
+              onClick={() => {
+                // navigate("/project");
+                window.open(urlPortfolio);
+                menuToggle();
+              }}
+            >
+              Project
+            </li>
+            <li
+              style={{ color: "#ffae00" }}
+              onClick={() => {
+                window.open(urlBlog);
+                menuToggle();
+              }}
+            >
+              Blog
+            </li>
+            <li
+              style={{ color: "#00CEFF" }}
+              onClick={() => {
+                navigate("/contact");
+                menuToggle();
+              }}
+            >
+              Contact
+            </li>
+          </ul>
         </div>
       )}
     </>
