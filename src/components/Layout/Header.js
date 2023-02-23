@@ -72,14 +72,6 @@ function Header(props) {
                 >
                   Blog
                 </li>
-                <li
-                  style={{ color: "#00CEFF" }}
-                  onClick={() => {
-                    navigate("/contact");
-                  }}
-                >
-                  Contact
-                </li>
               </ul>
             </nav>
           </div>
@@ -149,15 +141,6 @@ function Header(props) {
               }}
             >
               Blog
-            </li>
-            <li
-              style={{ color: "#00CEFF" }}
-              onClick={() => {
-                navigate("/contact");
-                menuToggle();
-              }}
-            >
-              Contact
             </li>
           </ul>
         </div>
