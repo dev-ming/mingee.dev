@@ -68,10 +68,10 @@ function Homepage(props) {
         <div className="main-text-container">
           <div className="particle-heart">
             <Lottie
-              style={{ marginLeft: "5%" }}
+              style={{ height: "70vmin", width: "70vmin" }}
               options={defaultOptions}
-              height={800}
-              width={1000}
+              // height={800}
+              // width={1000}
             />
           </div>
         </div>
