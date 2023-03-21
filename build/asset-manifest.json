@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8eabb12.css",
-    "main.js": "/static/js/main.a2b41d8d.js",
+    "main.css": "/static/css/main.34bed959.css",
+    "main.js": "/static/js/main.ce479107.js",
     "static/media/Gloss_And_Bloom.ttf": "/static/media/Gloss_And_Bloom.e3ac1c7f1971517fa3e0.ttf",
     "static/media/Soak_Up_The_Sun_Script-Bold.otf": "/static/media/Soak_Up_The_Sun_Script-Bold.501db30f95ed1490c9ff.otf",
     "index.html": "/index.html",
-    "main.e8eabb12.css.map": "/static/css/main.e8eabb12.css.map",
-    "main.a2b41d8d.js.map": "/static/js/main.a2b41d8d.js.map"
+    "main.34bed959.css.map": "/static/css/main.34bed959.css.map",
+    "main.ce479107.js.map": "/static/js/main.ce479107.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8eabb12.css",
-    "static/js/main.a2b41d8d.js"
+    "static/css/main.34bed959.css",
+    "static/js/main.ce479107.js"
   ]
 }
