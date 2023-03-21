@@ -26,7 +26,7 @@ function Header(props) {
 
   /** project 페이지 생성 전 까지 원래 포트폴리오 사이트로 이동 */
   const urlPortfolio = "https://jennadev.myportfolio.com/";
-  const urlBlog = "https://dev-jenna.tistory.com/";
+  const urlBlog = "https://velog.io/@dev_ming";
 
   return (
     <>
